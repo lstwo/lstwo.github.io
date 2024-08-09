@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(28, 25, 39), rgb(15, 14, 20));
+    color: white;
+    font-family: 'Roboto';
+    background-attachment: fixed;
+}
+
+.main_header {
+    /* colors */
+    background-color: #00000033;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.685);
+    color: white;
+
+    /* position, size and padding */
+    margin: 0;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    position: fixed;
+
+    /* content */
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.685);
+}
+
+.main_header_links {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+}
+
+html:not([data-scroll='0']) {
+    .main_header {
+      position: fixed;
+      top: 0;
+      background-color: #00000033;
+      backdrop-filter: blur(5px);
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.685);
+    }
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+    justify-self: flex-start;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    justify-self: flex-start;
+}
+
+main {
+    margin: 10px;
+}
+
+.medium-font {
+    font-size: 20px;
+}
+
+.large-font {
+    font-size: 30px;
+}
+
+.centered-font {
+    text-align: center;
+}
+
+.light-background {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.dark-background {
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.stretch {
+    width: 100%;
+    margin: 0px;
+    left: 0;
+    right: 0;
+}
+
+.center-children {
+    display: flex;
+    justify-content: center;
+}
+
+.center-children-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.center-children * {  
+    margin-right: auto;
+}
+
+.top-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+.drop-shadow {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.267);
+}
