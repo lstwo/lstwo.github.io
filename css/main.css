@@ -8,6 +8,10 @@ body {
     background-attachment: fixed;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .main_header {
     /* colors */
     background-color: #00000033;
@@ -66,8 +70,12 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: white;
     justify-self: flex-start;
+    color: #2f81f7
+}
+
+.main_header a {
+    color: white;
 }
 
 main {
@@ -128,4 +136,15 @@ main {
 
 .drop-shadow {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.267);
+}
+
+footer {
+    background-color: black;
+    padding: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: underline;
 }
