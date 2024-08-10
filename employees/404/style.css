@@ -1,0 +1,125 @@
+.logo-background {
+    background: rgb(60,55,158);
+    background: linear-gradient(121deg, rgba(60,55,158,1) 0%, rgba(123,41,176,1) 99%);
+    width: 100%;
+    height: 480px;
+    margin: 0px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.logo-background img {
+    image-rendering: pixelated;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.project-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.project-card * {
+    min-width: 10px;
+    max-width: 500px;
+    flex-shrink: 1;
+}
+
+.project-card img {
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.336));
+}
+h1	{
+    color: rgb(149, 1, 207);
+    font-style: arial;
+    font-size: "36pt";
+    }
+li {
+        font-Family: "Comic Sans MS";
+        font-size: 20px;
+        color:Midnightblue;
+    }
+td {
+        font-family: Arial;
+}
+table {
+    table-layout: fixed;
+    border: 5px solid;
+    background-color:black;
+    color:rgba(226, 21, 216, 0.864) ;
+    padding:10px;
+    
+}
+li.menu {
+    font-size: 16px;
+    width:200px;
+    Background-color:#80C0C0;
+    border: 2px #000080 solid;
+    border-left:20px #088F8F solid;
+    margin-top:10px;
+    padding:10px;
+    float:right;
+    
+    
+    }
+ul.menu	{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom:30px;
+    list-style-type: none;
+    
+}
+body {
+background-color: #CAE8FF;
+}
+ul.box
+{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom:30px;
+    list-style-type: none;
+}
+li.box
+{
+    font-size: 18px;
+    width:200px;
+    Background-color:#010101;
+    border: 2px #000000 solid;
+    margin-top:10px;
+    padding: 5px;
+    float:right;
+    
+}
+.p{
+font-size: 30px;
+color:aliceblue;
+padding-left: 20pt;
+}
+.fa {
+    padding: 40px;
+    font-size: 8px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.banner404
+{
+display:flex;
+justify-content: center;
+background-color: #5fcde4;
+}
+.container3 {
+    align-items: flex-start;
+    float: left;
+    padding-left: 30pt;
+  }
