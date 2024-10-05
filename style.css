@@ -29,7 +29,7 @@
 }
 
 .project-card * {
-    min-width: 10px;
+    min-width: 500px;
     max-width: 500px;
     flex-shrink: 1;
 }
