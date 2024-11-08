@@ -1,4 +1,4 @@
-const postsDir = `/blog/posts/`;
+const postsDir = `https://lstwo.github.io/blog/posts/`;
 const postListElement = document.getElementById("post-list");
 const contentElement = document.getElementById("content");
 const tocListElement = document.getElementById("toc-list");
