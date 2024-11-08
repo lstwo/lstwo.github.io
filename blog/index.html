@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/main.js"></script>
+    <tag include-html="/html/head.html"></tag>
+</head>
+<body>
+<br>
+
+    <div class="blog_header">
+        <h1>Status Updates</h1>
+    </div>
+
+    <div class="main_blog_container">
+        <div class="blog_sidebar">
+            <h2>Update Posts</h2>
+            <nav>
+                <ul id="post-list"></ul>
+            </nav>
+        </div>
+
+        <div class="main_blog">
+            <article id="content"></article>
+        </div>
+
+        <div class="toc_sidebar">
+            <h2>Table of Contents</h2>
+            <ul id="toc-list"></ul>
+        </div>
+    </div>
+
+    <div class="centered-font">
+        <a href="https://github.com/lstwo/lstwoMODS/releases" target="_blank">
+            <img src="/images/lstwoMODS AD 2.png" alt="lstwoMODS ad" width="50%">
+        </a>
+    </div>
+
+    <div include-html="/html/header.html"></div>
+    <div include-html="/html/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -142,10 +142,25 @@ footer {
     background-color: black;
     padding: 5px;
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 5px;
-    margin-top: auto;
 }
 
 footer a {
     text-decoration: underline;
+}
+
+#footer-links-container {
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}
+
+.footer-links-item {
+    margin: 5px;
+    width: 200px;
+}
+
+.footer-links-item li {
+    list-style: none;
 }
