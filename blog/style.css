@@ -1,6 +1,15 @@
+body {
+  margin-top: 0;
+}
+
 .blog_header {
   text-align: center;
-  margin-bottom: 20px;
+  background-color: rgb(18, 17, 18);
+  padding-top: 75px;
+  padding-bottom: 25px;
+
+  font-size: xx-large;
+  font-weight: 900;
 }
 
 /* Ensure that sticky behavior doesn't overlap with content */
@@ -9,6 +18,7 @@
   justify-content: center; /* Space between main blog and sidebars */
   align-items: stretch;
   border-top: 1px solid #57595e;
+  margin-top: 0;
 }
 
 .blog_sidebar, .toc_sidebar {
