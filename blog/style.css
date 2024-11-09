@@ -3,25 +3,33 @@
   margin-bottom: 20px;
 }
 
+/* Ensure that sticky behavior doesn't overlap with content */
 .main_blog_container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  border-top: 1px solid #ddd;
+  justify-content: center; /* Space between main blog and sidebars */
+  align-items: stretch;
+  border-top: 1px solid #57595e;
 }
 
 .blog_sidebar, .toc_sidebar {
-  width: 25%;  /* Adjust the width as needed */
+  width: 25%;
   max-width: 300px;
+  margin: 10px;
+  margin-top: 0;
 }
 
 .blog_sidebar {
-  border-right: 1px solid white;
+  border-right: 1px solid #57595e;
+  max-width: 200px;
+}
+
+.sidebar_content {
+  height: fit-content;
 }
 
 .main_blog {
-  width: 50%;  /* Content section takes up remaining space */
+  width: 60%;  /* Content section takes up remaining space */
+  margin-top: 0;
 }
 
 nav ul, .toc_sidebar ul {
@@ -44,7 +52,7 @@ a:hover {
 }
 
 article {
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .toc_sidebar h2, .blog_sidebar h2 {
@@ -57,6 +65,8 @@ article {
 }
 
 .toc_sidebar {
-  border-left: 1px solid white;
+  border-left: 1px solid #57595e;
   padding-left: 15px;
 }
+
+
