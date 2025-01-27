@@ -150,17 +150,34 @@ footer a {
     text-decoration: underline;
 }
 
+#footer {
+    position: relative; /* Required for absolute positioning of the image */
+}
+
 #footer-links-container {
     display: flex;
-    justify-content: left;
+    justify-content: left; /* Keeps the links aligned to the left */
     margin: 10px;
 }
 
 .footer-links-item {
     margin: 5px;
-    width: 200px;
+    width: fit-content;
+    max-width: 250px;
 }
 
-.footer-links-item li {
-    list-style: none;
+#footer-image-container {
+    position: absolute;
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%); /* Adjust to center the image fully */
+    right: calc(10px + 1em); /* Same margin as the top/bottom */
 }
+
+#footer-image-container img {
+    max-width: 150px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+
