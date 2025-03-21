@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lstwoSTUDIOS - Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <tag include-html="/html/head.html"></tag>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="logo-background" style="max-height: 200px; box-shadow: inset 0 0 15px black;">
+        <img src="lstwoMODS Logo.png" alt="logo" style="
+        --stroke-pos: 1px;
+        --stroke-neg: -1px;
+        --stroke-color: rgb(255, 255, 255);
+        filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
+        drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+        drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) 
+        drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.44)); 
+        max-height: 150px; 
+        align-self: center;">
+    </div>
+
+    <div style="max-width: 1000px; justify-self: center;">
+        <h1 style="justify-self: center;">ABOUT</h1>
+
+        <p>
+            lstwoMODS is a free and open source recreation of Azzamods as a BepInEx plugin. 
+            lstwoMODS Core contains the core UI while other modpacks can add game specific tabs and mods to the UI.
+        </p>
+    </div>
+
+    <div style="margin-top: 50px;"></div>
+
+    <div style="max-width: 1000px; justify-self: center;">
+        <h1 style="justify-self: center;">LINKS</h1>
+
+        <ul>
+            <li> <b>All Projects:</b> <a href="https://github.com/lstwoMODS/" target="_blank">https://github.com/lstwoMODS/</a> </li>
+            <li> <b>lstwoMODS Core:</b> <a href="https://github.com/lstwoMODS/lstwoMODS-Core" target="_blank">https://github.com/lstwoMODS/lstwoMODS-Core</a> </li>
+            <li> <b>Installer:</b> <a href="https://github.com/lstwoMODS/lstwoMODSInstaller" target="_blank">https://github.com/lstwoMODS/lstwoMODSInstaller</a> </li>
+            <br>
+            <li> <b>lstwoMODS Wobbly Life:</b> <a href="https://github.com/lstwoMODS/lstwoMODS-WobblyLife" target="_blank">https://github.com/lstwoMODS/lstwoMODS-WobblyLife</a> </li>
+            <li> <b>lstwoMODS Mayonnaise Simulator:</b> <a href="https://github.com/lstwoMODS/lstwoMODS-MayoSim" target="_blank">https://github.com/lstwoMODS/lstwoMODS-MayoSim</a> </li>
+        </ul>
+    </div>
+    
+    <div style="margin-top: 50px;"></div>
+
+    <div include-html="/html/header.html"></div>
+    <div include-html="/html/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>
