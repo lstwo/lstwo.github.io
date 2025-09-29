@@ -8,6 +8,8 @@ function generate() {
             document.getElementById("username").innerText = "Beffi";
             document.getElementById("word_display").innerText = "Beffi";
         }
+
+        return;
     }
 
     const the_replacements = [
