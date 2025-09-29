@@ -1,4 +1,15 @@
 function generate() {
+    if(Math.random() < 0.011) {
+        if(Math.random() < 0.5) {
+            document.getElementById("username").innerText = "Ashley";
+            document.getElementById("word_display").innerText = "Ashley";
+        }
+        else {
+            document.getElementById("username").innerText = "Beffi";
+            document.getElementById("word_display").innerText = "Beffi";
+        }
+    }
+
     const the_replacements = [
         { word: "the", plural: false },
         { word: "a", plural: false },
