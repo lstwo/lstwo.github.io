@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>theyoungdaydreamer typo generator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>theyoungdaydreamer typo generator</h1>
+
+    <button onclick="generate()">Generate</button>
+
+    <p id="typo">click generate to generate typo</p>
+
+    <div class="row">
+        <label for="inputText">Input text:</label><br>
+        <textarea id="inputText" rows="3">theyoungdaydreamer</textarea>
+    </div>
+
+    <div class="row">
+        <label>Typo Rate (%):</label>
+        <input type="range" id="typoRate" min="0" max="50" step="1" value="12">
+        <span id="typoRateValue">12</span>
+    </div>
+
+    <div class="row">
+        <label>Deletion Probability:</label>
+        <input type="range" id="deletionProb" min="0" max="1" step="0.01" value="0.18">
+        <span id="deletionProbValue">0.18</span>
+    </div>
+
+    <div class="row">
+        <label>Substitution Probability:</label>
+        <input type="range" id="substitutionProb" min="0" max="1" step="0.01" value="0.5">
+        <span id="substitutionProbValue">0.5</span>
+    </div>
+
+    <div class="row">
+        <label>Duplication Probability:</label>
+        <input type="range" id="duplicationProb" min="0" max="1" step="0.01" value="0.18">
+        <span id="duplicationProbValue">0.18</span>
+    </div>
+
+    <div class="row">
+        <label>Transpose Probability:</label>
+        <input type="range" id="transposeProb" min="0" max="1" step="0.01" value="0.14">
+        <span id="transposeProbValue">0.14</span>
+    </div>
+
+    <div class="row">
+        <label>Neighbor Decay:</label>
+        <input type="range" id="neighborDecay" min="0.5" max="3" step="0.1" value="1.6">
+        <span id="neighborDecayValue">1.6</span>
+    </div>
+
+    <script>
+        document.querySelectorAll('input[type=range]').forEach(slider => {
+            slider.addEventListener('input', () => {
+                document.getElementById(slider.id + "Value").textContent = slider.value;
+            });
+        });
+    </script>
+</body>
+</html>
