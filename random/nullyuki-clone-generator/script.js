@@ -102,7 +102,7 @@ const nullReplacements = [
 loadNames();
 
 async function loadNames() {
-    const response = await fetch('https://gist.githubusercontent.com/elifiner/cc90fdd387449158829515782936a9a4/raw/fea1da1a3c4ce5c8e470f679a8e1bc741281a609/first-names.txt').catch(err => {
+    const response = await fetch('https://raw.githubusercontent.com/dominictarr/random-name/refs/heads/master/first-names.txt').catch(err => {
         console.log(err);
         document.getElementById("username").innerText = "ERROR: " + err;
     });
